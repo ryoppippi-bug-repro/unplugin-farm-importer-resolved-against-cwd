@@ -1,6 +1,6 @@
 # unplugin Farm adapter resolves `importer` against cwd instead of root
 
-With the Farm adapter, `resolveId` receives `importer` resolved against `process.cwd()` rather than the Farm `root`, so it points at a missing file whenever the build runs with `root` set to another directory. The same plugin through the Vite adapter, or Farm run from inside the root, gets the right path. Upstream issue: ISSUE_URL.
+With the Farm adapter, `resolveId` receives `importer` resolved against `process.cwd()` rather than the Farm `root`, so it points at a missing file whenever the build runs with `root` set to another directory. The same plugin through the Vite adapter, or Farm run from inside the root, gets the right path. Upstream issue: https://github.com/unjs/unplugin/issues/643.
 
 Versions: unplugin 3.7.0, @farmfe/core 2.0.0, vite 8.3.8 (baseline), Node.js 24.21.0, pnpm 12.9.0, macOS.
 
