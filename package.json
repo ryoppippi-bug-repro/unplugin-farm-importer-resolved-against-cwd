@@ -1,0 +1,19 @@
+{
+  "name": "unplugin-farm-importer-resolved-against-cwd",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@12.9.0",
+  "scripts": {
+    "repro": "FARM=1 node repro.js",
+    "repro:official": "node repro.js",
+    "repro:cwd-root": "FARM=1 IN_ROOT=1 node repro.js",
+    "show": "FARM=1 node repro.js; cat out/farm/*.js",
+    "show:official": "node repro.js; cat out/vite/*.js"
+  },
+  "devDependencies": {
+    "@farmfe/core": "2.0.0",
+    "unplugin": "3.7.0",
+    "vite": "8.3.8"
+  }
+}
